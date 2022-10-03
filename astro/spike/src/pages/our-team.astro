@@ -2,8 +2,10 @@
 import Team from '../components/Team.astro';
 import Layout from '../layouts/Layout.astro';
 import { Requests } from '../models/requests';
+import { BasicAuthRequest, IsAuthorized } from '../services/requests';
 
-const response = await fetch(Requests.json_placeholder_users_request);
+
+const response = IsAuthorized() ? await BasicAuthRequest(Requests.wordpress_users_request) : await fetch(Requests.wordpress_users_request);
 const users = await response.json();
 ---
 
