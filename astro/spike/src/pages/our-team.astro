@@ -1,0 +1,14 @@
+---
+import Team from '../components/Team.astro';
+import Layout from '../layouts/Layout.astro';
+import { Requests } from '../models/requests';
+
+const response = await fetch(Requests.json_placeholder_users_request);
+const users = await response.json();
+---
+
+<Layout title="Our Team - Bocoup">
+	<main>
+          <Team users={users}/>
+	</main>
+</Layout>
