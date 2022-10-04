@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Requests } from "../models/requests";
 import { GetStaticProps } from 'next'
 
-export const RecentBlogs = ({posts}:InferGetStaticPropsType<typeof getStaticProps>) => {
+export const RecentBlogs = ({posts}:any) => {
   console.log(posts)
   return (
     <section className="text-gray-600 body-font">
@@ -90,15 +90,3 @@ export const RecentBlogs = ({posts}:InferGetStaticPropsType<typeof getStaticProp
     </section>
   );
 };
-
-export const getStaticProps: GetStaticProps = async (context) => {
-	const url = Requests.json_placeholder_posts_request+"?_limit=3";
-	const response = await fetch(url)
-	const posts = await response.json()
-  
-	return {
-	  props: {
-		  posts,
-	  },
-	};
-  }
