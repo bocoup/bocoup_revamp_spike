@@ -3,8 +3,9 @@ import Layout from "../../../layouts/Layout";
 import { Requests } from "../../../models/requests";
 
 const Blog: NextPage = ({post}:any) => {
-  const child = (
-    <>
+  const Child = () => {
+    return (
+      <>
       <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto flex flex-col">
       <div className="lg:w-4/6 mx-auto">
@@ -53,8 +54,9 @@ const Blog: NextPage = ({post}:any) => {
     </div>
   </section>
     </>
-  );
-  return <Layout children={child} />;
+    )
+  }
+  return <Layout><Child/></Layout>;
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -65,12 +67,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       post: result,
+      fallback:false
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
-    const url = Requests.json_placeholder_posts_request;
+    const url = Requests.json_placeholder_posts_request+"?_limit=1";
 	const response = await fetch(url);
 	const results = await response.json();
 

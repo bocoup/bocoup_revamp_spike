@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout";
 import { Requests } from "../models/requests";
 
 const Blogs: NextPage = ({posts}:any) => {
-  const child = (
-    <>
+  const Child = () => {
+    return (
+      <>
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -20,7 +21,7 @@ const Blogs: NextPage = ({posts}:any) => {
           {
             posts.map((post: any) => {
               return (
-                <div className="py-8 flex flex-wrap md:flex-nowrap">
+                <div className="py-8 flex flex-wrap md:flex-nowrap" key={Math.random() + post.id}>
                   <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                     <span className="font-semibold title-font text-gray-700">
                       CATEGORY
@@ -58,8 +59,9 @@ const Blogs: NextPage = ({posts}:any) => {
       </div>
     </section>
     </>
-  );
-  return <Layout children={child} />;
+    )
+  }
+  return <Layout><Child/></Layout>;
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -70,6 +72,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       posts: results,
+      fallback:false
     },
   };
 };

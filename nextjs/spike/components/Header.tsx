@@ -1,13 +1,15 @@
+import Link from 'next/link';
 import styles from './Header.module.css'
 
 export const Header = () => {
   return (
     <header className={"text-gray-600 body-font"}>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a
+        <Link
           href="/"
           className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
+          <>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -21,27 +23,28 @@ export const Header = () => {
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
           <span className="ml-3 text-xl">Bocoup</span>
-        </a>
+          </>
+        </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a href="/services" className="mr-5 hover:text-gray-900">
+          <Link href="/services" className="mr-5 hover:text-gray-900">
             Services
-          </a>
-          <a href="/recent-work" className="mr-5 hover:text-gray-900">
+          </Link>
+          <Link href="/recent-work" className="mr-5 hover:text-gray-900">
             Recent Work
-          </a>
-          <a href="/blogs" className="mr-5 hover:text-gray-900">
+          </Link>
+          <Link href="/blogs" className="mr-5 hover:text-gray-900">
             Blog
-          </a>
-          <a className="mr-5 hover:text-gray-900"></a>
+          </Link>
+          <div className="mr-5 hover:text-gray-900"></div>
           <div className={styles.dropdown}>
-            <a className="mr-5 hover:text-gray-900">
+            <div className="mr-5 hover:text-gray-900">
               <button className="dropbtn">
                 About Us
                 <i className="fa fa-caret-down"></i>
               </button>
-            </a>
+            </div>
             <div className={styles.dropdownContent}>
-              <a href="/our-team">Our Team</a>
+              <Link href="/our-team">Our Team</Link>
             </div>
           </div>
         </nav>
@@ -74,7 +77,7 @@ export const Header = () => {
             </div>
           </form>
         </div>
-        <a href="/contact-us">
+        <Link href="/contact-us">
           <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
             Contact Us
             <svg
@@ -89,7 +92,7 @@ export const Header = () => {
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
-        </a>
+        </Link>
       </div>
     </header>
   );

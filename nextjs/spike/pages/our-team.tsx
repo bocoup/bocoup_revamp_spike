@@ -5,7 +5,7 @@ import { Requests } from '../models/requests';
 
 const OurTeam: NextPage = ({users}: any) => {
   return (
-    <Layout children={<Team users={users}/>}/>
+    <Layout><Team users={users}/></Layout>
   )
 }
 
@@ -40,6 +40,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       users: results,
+      fallback:false
     },
   };
 };

@@ -9,13 +9,13 @@ export const Team = ({ users }: { users: any }) => {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
             unicorns, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them.
+            haven&apos;t heard of them.
           </p>
         </div>
         <div className="flex flex-wrap -m-2">
           {users.map((user: any) => {
             return (
-              <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="p-2 lg:w-1/3 md:w-1/2 w-full" key={Math.random() + user.id}>
                 <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
                   <img
                     alt="team"

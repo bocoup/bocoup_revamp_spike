@@ -5,8 +5,8 @@ import Layout from "../layouts/Layout";
 import { Requests } from "../models/requests";
 
 const Home: NextPage = ({posts}:any) => {
-  const child = (
-    <>
+  const Child = () => {
+    return (<>
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -36,9 +36,9 @@ const Home: NextPage = ({posts}:any) => {
       </section>
       <RecentProjects />
       <RecentBlogs posts={posts}/>
-    </>
-  );
-  return <Layout children={child} />;
+    </>)
+  }
+  return <Layout><Child/></Layout>;
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -49,6 +49,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   return {
     props: {
       posts: results,
+      fallback:false
     },
   };
 };

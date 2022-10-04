@@ -5,7 +5,9 @@ import Layout from '../layouts/Layout'
 import styles from '../styles/Home.module.css'
 
 const ContactUs: NextPage = () => {
-  const child = 
+  const Child = () => {
+
+    return (
       <section className="text-gray-600 body-font relative">
             <div className="container px-5 py-24 mx-auto">
               <div className="flex flex-col text-center w-full mb-12">
@@ -68,9 +70,11 @@ const ContactUs: NextPage = () => {
               </div>
             </div>
           </section>
+    )
+  }
           
   return (
-    <Layout children={child}/>
+    <Layout><Child/></Layout>
   )
 }
 

@@ -22,7 +22,7 @@ export const Footer = () => {
               Subscribe
             </button>
             <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
-              We'd Love to Hear From You.
+              We&apos;d Love to Hear From You.
               <br className="lg:block hidden" />
               Get in Touch!
             </p>
