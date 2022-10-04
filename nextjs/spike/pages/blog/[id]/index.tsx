@@ -73,7 +73,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
-    const url = Requests.json_placeholder_posts_request+"?_limit=1";
+    const url = Requests.json_placeholder_posts_request;
 	const response = await fetch(url);
 	const results = await response.json();
 
