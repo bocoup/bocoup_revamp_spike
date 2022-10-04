@@ -1,10 +1,4 @@
-import { InferGetStaticPropsType } from "next";
-import { useEffect, useState } from "react";
-import { Requests } from "../models/requests";
-import { GetStaticProps } from 'next'
-
 export const RecentBlogs = ({posts}:any) => {
-  console.log(posts)
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
@@ -30,7 +24,7 @@ export const RecentBlogs = ({posts}:any) => {
                   </h1>
                   <p className="leading-relaxed mb-3">{post.body}</p>
                   <a
-                    href={`/blog/${post.title}`}
+                    href={`/blog/${post.id}`}
                     className="text-indigo-500 inline-flex items-center"
                   >
                     Learn More

@@ -1,6 +1,8 @@
+import styles from './Header.module.css'
+
 export const Header = () => {
   return (
-    <header className="text-gray-600 body-font">
+    <header className={"text-gray-600 body-font"}>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a
           href="/"
@@ -27,18 +29,18 @@ export const Header = () => {
           <a href="/recent-work" className="mr-5 hover:text-gray-900">
             Recent Work
           </a>
-          <a href="/blog/1" className="mr-5 hover:text-gray-900">
+          <a href="/blogs" className="mr-5 hover:text-gray-900">
             Blog
           </a>
           <a className="mr-5 hover:text-gray-900"></a>
-          <div className="dropdown">
+          <div className={styles.dropdown}>
             <a className="mr-5 hover:text-gray-900">
               <button className="dropbtn">
                 About Us
                 <i className="fa fa-caret-down"></i>
               </button>
             </a>
-            <div className="dropdown-content">
+            <div className={styles.dropdownContent}>
               <a href="/our-team">Our Team</a>
             </div>
           </div>
