@@ -1,4 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
+import { Banner } from "../components/Banner";
 import { RecentBlogs } from "../components/RecentBlogs";
 import { RecentProjects } from "../components/RecentProjects";
 import Layout from "../layouts/Layout";
@@ -7,6 +8,7 @@ import { Requests } from "../models/requests";
 const Home: NextPage = ({posts}:any) => {
   const Child = () => {
     return (<>
+    <Banner/>
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
