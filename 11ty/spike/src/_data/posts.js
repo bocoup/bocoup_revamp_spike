@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = require("node-fetch")
 const url = "https://jsonplaceholder.typicode.com/posts";
 
 module.exports = async () => {
