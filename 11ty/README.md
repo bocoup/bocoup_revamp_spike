@@ -25,14 +25,14 @@ To test the following examples, the functionality that was replicated from the o
 To make sure all of the frameworks had the same factors, the following were recorded from their netlify deploys. https://transcendent-melomakarona-a5554a.netlify.app/ 
 
 ### Network 
-Index: Finish 390 ms, DOMContentLoaded: 387 ms, Load 395 ms.  
-Blog: Finish 160 ms, DOMContentLoaded 395 ms, Load 401 ms. 
-Our Team: Finish 445 ms DOMContentLoaded 420 ms, Load: 445 ms.
+- Index: Finish 390 ms, DOMContentLoaded: 387 ms, Load 395 ms. 
+- Blog: Finish 160 ms, DOMContentLoaded 395 ms, Load 401 ms. 
+- Our Team: Finish 445 ms DOMContentLoaded 420 ms, Load: 445 ms.
 
 ### Size 
-Index: 9 requests, 454 kB transferred, 1.2 MB resources.
-Blog: 7 requests, 454 kB transferred, 1.2 MB resources.
-Our Team: 11 requests, 454 kB transferred, 1.2 MB resources.
+- Index: 9 requests, 454 kB transferred, 1.2 MB resources.
+- Blog: 7 requests, 454 kB transferred, 1.2 MB resources.
+- Our Team: 11 requests, 454 kB transferred, 1.2 MB resources.
 
 ## The Developer Experience
 
