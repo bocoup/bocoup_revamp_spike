@@ -9,7 +9,7 @@ module.exports = async () => {
 
     if(username != null && password != null) {
         return await fetch(url, {
-            headers: new Headers({
+            headers: new fetch.Headers({
                 Authorization: `Basic ${Buffer.from(username + ":" + password).toString('base64')}`,
               })    // we’ll parse JSON for you
         }).then(response => response.json());
