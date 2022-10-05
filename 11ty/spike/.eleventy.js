@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("src/styles/tailwind.css")
+    eleventyConfig.addPassthroughCopy("src/styles/")
     return {
         dir: {
           input: "src",
