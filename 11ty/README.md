@@ -1,4 +1,4 @@
-# NextJS Score Card
+# 11ty Score Card
 
 ## Disclaimer
 There may be instances here that with my current experience I overlooked or did not handle the way the creators of the framework would reccommend. I do not know what I do not know, so if anyone is aware of better ways to handle anything that i've overlooked, let me know :)
