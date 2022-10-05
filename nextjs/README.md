@@ -27,14 +27,14 @@ To test the following examples, the functionality that was replicated from the o
 To make sure all of the frameworks had the same factors, the following were recorded from their netlify deploys. https://fantastic-concha-0db0f3.netlify.app/
 
 ### Network 
-Index: Finish 413 ms, DOMContentLoaded: 260 ms, Load 265 ms.  
-Blog: Finish 797 ms, DOMContentLoaded 641 ms, Load 641 ms. 
-Our Team: Finish 846 ms DOMContentLoaded 598 ms, Load: 598 ms.
+- Index: Finish 413 ms, DOMContentLoaded: 260 ms, Load 265 ms.  
+- Blog: Finish 797 ms, DOMContentLoaded 641 ms, Load 641 ms. 
+- Our Team: Finish 846 ms DOMContentLoaded 598 ms, Load: 598 ms.
 
 ### Size 
-Index: 27 requests, 455 kB transferred, 858 kB resources.
-Blog: 23 requests, 470 kB transferred, 945 kB resources.
-Our Team: 31 requests, 563 kB transferred, 900 kB resources.
+- Index: 27 requests, 455 kB transferred, 858 kB resources.
+- Blog: 23 requests, 470 kB transferred, 945 kB resources.
+- Our Team: 31 requests, 563 kB transferred, 900 kB resources.
 
 ## The Developer Experience
 
