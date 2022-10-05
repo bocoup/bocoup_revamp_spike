@@ -9,6 +9,8 @@
 		<title>{{title}}</title>
 	</head>
 	<body>
+		{% include "components/Header.html" %}
 		{{content | safe}}
 	</body>
+	{% include "components/Footer.html" %}
 </html>
