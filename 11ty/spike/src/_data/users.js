@@ -1,4 +1,5 @@
 require('dotenv').config()
+const fetch = require('node-fetch');
 const url = "https://dev.bocoup.com/wp-json/wp/v2/users";
 
 
