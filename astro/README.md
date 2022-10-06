@@ -7,7 +7,7 @@ There may be instances here that with my current experience I overlooked or did 
 
 
 ## Introduction
-The following score-card was created to give insight into how NextJS would function if chosen for our new front-end framework. The following implementation was done with the latest version of `NextJS` and `Astro`. The styling library that was chosen was `Tailwind-css`.
+The following score-card was created to give insight into how Astro would function if chosen for our new front-end framework. The following implementation was done with the latest version of `Astro`. The styling library that was chosen was `Tailwind-css`.
 
 `Tailwind-css` was chosen because of it's average-to-high package size and it being easy to replicate amongst the different frameworks without `TSX` component specific coding. 
 
@@ -17,70 +17,56 @@ To test the following examples, the functionality that was replicated from the o
 - General Pages and Designs for size comparisons
 
 ## Statistics
-To make sure all of the frameworks had the same factors, the following were recorded from their netlify deploys. https://fantastic-concha-0db0f3.netlify.app/
+To make sure all of the frameworks had the same factors, the following were recorded from their netlify deploys. https://papaya-croissant-97011e.netlify.app/
 
 ### Specific Performance Report
 https://gtmetrix.com/reports/papaya-croissant-97011e.netlify.app/ZbSSMV4c/
 
 ### Network 
-- Index: Finish 413 ms, DOMContentLoaded: 260 ms, Load 265 ms.  
-- Blog: Finish 797 ms, DOMContentLoaded 641 ms, Load 641 ms. 
-- Our Team: Finish 846 ms DOMContentLoaded 598 ms, Load: 598 ms.
+- Index: Finish 225 ms, DOMContentLoaded: 116 ms, Load 161 ms.  
+- Blog: Finish 253 ms, DOMContentLoaded 107 ms, Load 162 ms. 
+- Our Team: Finish 293 ms DOMContentLoaded 145 ms, Load: 233 ms.
 
 ### Size 
-- Index: 27 requests, 455 kB transferred, 858 kB resources.
-- Blog: 23 requests, 470 kB transferred, 945 kB resources.
-- Our Team: 31 requests, 563 kB transferred, 900 kB resources.
+- Index: 9 requests, 454 kB transferred, 503 kB resources.
+- Blog: 5 requests, 454 kB transferred, 493 kB resources.
+- Our Team: 10 requests, 454 kB transferred, 519 kB resources.
 
 ## The Developer Experience
 
 ### Learning Curve
-If a developer is already familiar with the fundamentals of node and react, then learning NextJS is simply understanding how it's routing, custom files, and specific components function. 
+Although the addition of the `.astro` file can seem daunting at first, it's actually just componenet based html. 
 
-Although that in and of itself does not sound like a steep learning curve, there is a lot to uncover and a lot that is still currently being developed on. 
-
-You will find certain things working for non-typescript functions that need some cusomtization for their typescript equivalent. Although this is known for most frameworks that allow variations in syntax, NextJS does not have a the best documentation in outlining the differences. 
+The documentation is also really well done, to where things get really intuitive after a certain point. This is a batteries included framework, but the batteries also allow you to customize them how ever you'd like - of you'd like. Essentially this framework takes the good of `NextJS` and the good of `11ty` and optimizes on the bad. 
 
 ### Setup
-The setup of `NextJS` is a singular command, so it is not a from scratch framework. You will have certain directories created for you, but you still have the flexibiity of creating other ones to your liking. For example, the pages directory ships with it to handle routing, but the components directory can be created by you anywhere. 
-
-Adding in `Tailwind-css` was also as simple as following their documentation. 
-
-Even though `NextJS` comes shipped with most of the things you'll need done for you, creating any customization on it comes with custom files. For example, to manage anything related to the header of your html files, you'll have to create a `_document.js` file that you have to specify with what you'd like. There are many other options like this, but all of them are known to come with the disclaimer of certain things may not work as expected if you do this. 
-
-To code for something simple like changing the title of all of your html pages becomes more cumbersome with this process. Even though this framework's main selling point is it's routing capability - they are not accessible, nor easily intuitive past what they've set up for you. For example if you would like any specifications on SSG or SSR routing, it's not hard, but not nice either (and may or may not work how you expect it to).  
+The setup of `Astro` is a single command through `npx`. And they already have an official built in integration with `tailwind-css` so that was also a single command. Even though it is on it's first release, the release was released with a whole ecosystem in mind. That being said because the system is also typescript based, any other non official integrations can be `import {} from ..` in as well. 
 
 ### Collaborative
 Because of the framework's struture, it supplies a clear pattern to follow. The components and pages themselves would have to be strucutred by the developers themselves, but once a pattern exists it should be easily understandable
 
 ### Testing
-Because `NextJS` is a react based JS framework, anything that works for that works here as well. They even have documentation on how to go about different frameworks.  
+No official testing integrations exist yet for `Astro`, but frameworks like `selenium` and `cypress` and other frameworks like those can still be used. They are currently working on the testing integrations.  
 
 ### Accessibility
-Since `NextJS` created itself upon a multipage routing framework, they have created their own components for this functionality. These components themselves do not always align with their html counterparts and do not have the same behavior in some cases. In this case, developers would have to code for certain scenarios that were already handled by existing html attributes. 
-
-Also important to note the other complaints about accessibility and dynamic components still applies here as well - as it does with react in general. 
+Depending on what file types you end up using here, for example if you add in any react you'd have to develop with the cons of react in mind and code for those - but unlike `NextJS` it does not force on you it's own custom components. The `.astro` files are all `html` based so the accessibility implications there are on the developer developing it. `Astro` itself also has it's own accessible components integrations: https://components.accessible-astro.dev/ to build off of into an accessible user flow for own project.
 
 ### Assets
-When it comes to assets, you can call them in externally and/or you can store them within the framework's `public` directory and `NextJS` takes care of all of the building and handling. This process is not a manual set up. 
-
-Styling can be done globally, through existing component/react frameworks, or through the framework's `[component_name].module.css` system. This system was made to make the styling easier and more component organized, but ends up being messy and not as sleek as they'd expected. 
+When it comes to assets, you can call them in externally and/or you can store them within the framework's `public` directory and `Astro` takes care of all of the building and handling. This process is not a manual set up. 
 
 ### Deployment to Netlify
-One of the things that became apparent when deploying the static site to netlify, was that the styling in a static `NextJS` site has the potential to not look like how it does in the `SSR` version. This would require extra debugging and setup from the developer themselves to figure out - in relation to whatever style library/system they're using. This did not seem like an issue with netlify, but rather with the framework's generation of the site itself.
+Since they have an existing netlify integration, this was just a matter of applying that with the `.netlfiy.toml` file.
 
 ### Other Notes
-The expectation from a framework that decides to automate a lot of things for you, is that certain things would be handled. One of the things that `NextJS` does not handle in it's routing is pagination. This has to be coded by the developers themselves - unlike other `SSG`'s. This is not a hard fix, but adds more overhead and room for bugs in the process.
-
-This was ironic as the creators of `NextJS` came up with a pagination system, that is currently being used in astro automatically... but has to be coded for `NextJS`
+This framework took everything that were complaints from other site generators and found intuitive ways to expand upon them as well as creating their own ecosystem. It is important to note that the framework itself is still on its first version so things can be subject to change, but it is also important to note that its first version is ahead of certain frameworks current version.
 
 ## The Audience Experience
 
 ### Accessibility
-Because of the framework's reliance on it's own custom components, the experience here may not be as expected for screen-reader users. In most cases, since they'd have to be customized per developer. Since the variance in things like `Link` components becomes large, the accessibility experience here is not the best. 
+Dependent on how the developer developed it. 
 
 ### Site Updates
-Any update done to the repository gets applied to the netlify deploy - do have to be wary of the cache in certain instances, but the fix is to just delete and reupload. 
+Any update done to the repository gets applied to the netlify deploy. 
 
 ### Other Notes
-Variability in site build styling and developer local styling could open up the audience to situations that developer's may not have accounted for - as well as weirdness with the cache. 
+None
