@@ -26,6 +26,9 @@ To test the following examples, the functionality that was replicated from the o
 ## Statistics
 To make sure all of the frameworks had the same factors, the following were recorded from their netlify deploys. https://fantastic-concha-0db0f3.netlify.app/
 
+### Specific Performance Report
+https://gtmetrix.com/reports/fantastic-concha-0db0f3.netlify.app/ZdwX0AyA/
+
 ### Network 
 - Index: Finish 413 ms, DOMContentLoaded: 260 ms, Load 265 ms.  
 - Blog: Finish 797 ms, DOMContentLoaded 641 ms, Load 641 ms. 
