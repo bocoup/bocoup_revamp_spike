@@ -20,7 +20,7 @@ A website builder that can be utilized to just be a headless cms or also be a we
 ## Concluding Remarks
 Regardless of what frontend is chosen, it's imperative that an editor system is in place as well. In this regard, any existing editor systems like wordpress have already done the work of that implementation. 
 
-That being said, the security and plugin management of wordpress are points of concern. As well as its ease in overhead coming with the caveat of difficulty in customizations.  
+That being said, the security and plugin management of wordpress are points of concern. As well as, its ease in overhead coming with the caveat of difficulty in customizations.  
 
 The other frameworks mentioned above do not come with editor systems already built in, but do have packages/plugins that can be used to create an editor system for them as well. The chosen frameworks are based around javascript and html foundations and are on a spectrum of overhead. `11ty` provides no overhead, and is a completely manually customized process through configs. `NextJS` provides routing and multi-page functionality for react projects, but comes with its own issues on top of reacts existing issues. `Astro` provides an overhead for site generation and everything else is completely customizeable, but it is still on it's first official release. 
 
