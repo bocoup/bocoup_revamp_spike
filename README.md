@@ -30,6 +30,6 @@ Based upon the scorecards in the respective folders themselves, the final rankin
 
 1. Astro (with the caveat of us having to build in an editor system)
 2. Wordpress (for its editor system)
-3. 11ty & NextJS (they both balanced out each others cons, but respectively were still not great)
+3. 11ty & NextJS (they both balanced out each others cons, but respectively were still not ideal)
 
 
