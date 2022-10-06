@@ -3,7 +3,7 @@
 ## Introduction
 This repo provides insight into different potential heads for a headless cms. These frontends can come as static site generators, server side renderers, or a site builder from the headless cms itself. 
 
-## The Attachements
+## The Frontends
 
 ### 11ty
 A static site generator that you configure with it's config file, and then code however you would like. https://www.11ty.dev/ 
