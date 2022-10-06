@@ -4,7 +4,9 @@
 There may be instances here that with my current experience I overlooked or did not handle the way the creators of the framework would reccommend. I do not know what I do not know, so if anyone is aware of better ways to handle anything that i've overlooked, let me know :)
 
 ## Quick Summary
+My bias is definitely here, but it should be noted that going into this I was expecting NextJS to come on top.
 
+This is a 10/10
 
 ## Introduction
 The following score-card was created to give insight into how Astro would function if chosen for our new front-end framework. The following implementation was done with the latest version of `Astro`. The styling library that was chosen was `Tailwind-css`.
