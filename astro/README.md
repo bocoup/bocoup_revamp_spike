@@ -79,9 +79,6 @@ This was ironic as the creators of `NextJS` came up with a pagination system, th
 ### Accessibility
 Because of the framework's reliance on it's own custom components, the experience here may not be as expected for screen-reader users. In most cases, since they'd have to be customized per developer. Since the variance in things like `Link` components becomes large, the accessibility experience here is not the best. 
 
-### Load Testing
-
-
 ### Site Updates
 Any update done to the repository gets applied to the netlify deploy - do have to be wary of the cache in certain instances, but the fix is to just delete and reupload. 
 

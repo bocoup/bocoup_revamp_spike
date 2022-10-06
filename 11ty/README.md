@@ -76,9 +76,6 @@ That being said, even this provided pagination and other templating features out
 ### Accessibility
 Dependent on the developer and the site generation. 
 
-### Load Testing
-
-
 ### Site Updates
 Any update done to the repository gets applied to the netlify deploy - do have to be wary of the cache in certain instances, but the fix is to just delete and reupload. 
 
