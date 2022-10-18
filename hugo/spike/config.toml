@@ -1,0 +1,6 @@
+baseURL = 'http://example.org/' 
+languageCode = 'en-us' 
+title = 'Bocoup' 
+theme = "up-business-theme" 
+[params] 
+    basicAuth = "Basic"
