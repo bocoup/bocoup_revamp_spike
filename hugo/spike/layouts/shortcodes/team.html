@@ -1,0 +1,5 @@
+{{ range getJSON "https://dev.bocoup.com/wp-json/wp/v2/users" (dict "Authorization" .Site.Params.basicAuth) }}
+<div>
+ <p>{{.name}}</p>
+</div>
+{{end}}

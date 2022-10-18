@@ -1,0 +1,6 @@
+{{ range getJSON "https://jsonplaceholder.typicode.com/posts" }}
+<div>
+ <p>{{.id}}</p>
+ <p>{{.title}}</p>
+</div>
+{{end}}
