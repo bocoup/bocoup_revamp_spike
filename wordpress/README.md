@@ -10,6 +10,8 @@ This was just a general look into different themes in dev.bocoup.com compared to
 - bocoup.com metrics: https://gtmetrix.com/reports/bocoup.com/27Kv1FfV/
 - dev.bocoup.com metrics: https://gtmetrix.com/reports/dev.bocoup.com/loeNZLLl/ && https://gtmetrix.com/reports/dev.bocoup.com/qga4UBux/ - two different themes were shown to show that the metrics are dependant on the theme itself. 
 
+Current lighthouse: https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fbocoup.com%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext 
+
 ### Network 
 #### dev.bocoup.com Network (again this is theme dependant)
 - Index: Finish 689 ms, DOMContentLoaded: 447 ms, Load 572 ms.  
