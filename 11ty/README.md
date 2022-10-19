@@ -24,8 +24,10 @@ To test the following examples, the functionality that was replicated from the o
 ## Statistics
 To make sure all of the frameworks had the same factors, the following were recorded from their netlify deploys. https://transcendent-melomakarona-a5554a.netlify.app/ 
 
-### Specific Performance Report
+### Specific Performance Reports
 https://gtmetrix.com/reports/transcendent-melomakarona-a5554a.netlify.app/oOZka90x/
+
+https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fgithub.com%2Faleenaloves%2Fbocoup_revamp_spike%2Ftree%2Fmain%2F11ty&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext
 
 ### Network 
 - Index: Finish 390 ms, DOMContentLoaded: 387 ms, Load 395 ms. 
