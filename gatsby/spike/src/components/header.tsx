@@ -67,7 +67,7 @@ const data: HeaderData = {
     {
       id: "3",
       navItemType: "Link",
-      href: "#!",
+      href: "/Blog",
       text: "Blog",
     },
   ],
