@@ -34,6 +34,9 @@ export default function NavigationMenu({ menuItems, className }) {
             </li>
           );
         })}
+        <li key="work">
+              <Link href='/work'>Work</Link>
+            </li>
       </ul>
     );
   }
